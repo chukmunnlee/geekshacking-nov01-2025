@@ -1,0 +1,22 @@
+[project]
+name = "geekshacking-nov01-2025"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastmcp>=2.13.0.2",
+]
+
+[project.scripts]
+todo-mcp = "todo_mcp:main"
+
+[build-system]
+requires = [ "setuptools" ]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = { "" = "." }
+
+[tool.setuptools.packages.find]
+where = [ "." ]
